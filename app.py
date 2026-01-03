@@ -7,7 +7,7 @@ from xai_sdk.chat import user
 from dotenv import load_dotenv
 
 # pull custom image assets (purple thunderbolt)
-gr.set_static_paths(paths=["assets/"])
+#gr.set_static_paths(paths=["assets/"])
 
 # load XAI_API_Key from .env file
 load_dotenv()
@@ -61,7 +61,7 @@ with gr.Blocks(theme=gr.themes.Monochrome()) as demo:
                   "Who is the true expert, Elliot or Andrew?"],
         chatbot = gr.Chatbot(
             height = 600,
-            avatar_images = (None, "assets/chat_icon.png")
+            avatar_images = (None, "https://x.ai/favicon.ico") #avatar_images = (None, "assets/chat_icon.png") changed to url
         )
     )
 
