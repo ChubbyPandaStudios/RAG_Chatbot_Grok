@@ -67,3 +67,7 @@ with gr.Blocks(theme=gr.themes.Monochrome()) as demo:
 
 # Launch the app
 demo.launch()
+
+'''Completed flow, chat icon is now a statis url instead of downlowded asset,
+hugging face was failing to sync because of the png files in assets. The PNG files allowed for more customization,
+but continued having issues with whhen syncing to huggingface'''
